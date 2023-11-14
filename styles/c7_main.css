@@ -30,8 +30,8 @@ a:focus, a:hover {
 	display: block;
 	width: 160px;
 	text-align: center;
-	padding-top: 1em;
-	padding-bottom: 1em;
+	text-decoration: none;
+	padding:1em 0;
 	background-color: #800000;
 	color: white;
 	font-weight: bold;
@@ -42,7 +42,6 @@ a:focus, a:hover {
 #nav_menu ul ul {
 	display: none;
 	position: absolute;
-	top: 100px;
 }
 #nav_menu ul ul li{
 	float:none;
@@ -50,7 +49,7 @@ a:focus, a:hover {
 #nav_menu ul li:hover >ul{
 	display: block;
 }
-#nav_menu >ul:: after{
+#nav_menu >ul:after{
 	content:"";
 	clear: both;
 	display: block;
@@ -108,6 +107,7 @@ section blockquote {
 }
 section ul {
 	padding: 0 0 .25em 1.25em;
+	list-style-type: circle;
 }
 section li {
 	padding-bottom: .35em;
@@ -131,7 +131,6 @@ article img {
 	margin: .5em 0 1em 1em;
 	border: 1px solid black;
 }
-
 /* the styles for the aside */
 aside {
 	width: 215px;
@@ -150,7 +149,6 @@ aside h3 {
 aside img {
 	padding-bottom: 1em;
 }
-
 /* the styles for the footer */
 footer {
 	background-color: #931420;
